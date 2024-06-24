@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projekt 1</title>
+	
+	<!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+	
+	<!-- bootstrap icon -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+	
+	<!-- animated css -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	
+	<!-- fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+
+	<!-- custom css -->
+	<link rel="stylesheet" href="styles/customStyles.css">
+  </head>
+  <body>
+  <div class="bluring" id="blur">
+	<div id="menu">
+		<nav class="navbar navbar-expand-lg bg-body-tertiary">
+		  <div class="container">
+			<a class="navbar-brand" href="#">
+			  <img src="img/logo.png">
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+			  <ul class="navbar-nav">
+				<li class="nav-item">
+				  <a class="nav-link active" aria-current="page" href="#">Domov</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#aboutUs">O nás</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#priceList">Ceny</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#gallery">Galéria</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#contact">Kontakty</a>
+				</li>
+			  </ul>
+			</div>
+		  </div>
+		</nav>		
+	</div>
+
+	
+	<div id="slider" class="container-fluid">
+		<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+		  <div class="carousel-inner">
+			<div class="carousel-item active">
+				<div class="row">
+					<div class="col-md-5 carouselImgs" id="carouselItem1Img">
+						<img src="img/slider1.png" class="d-block animate__animated animate__backInUp" alt="...">
+					</div>
+					<div class="col-md-7 carouselText text-center" id="carouselText1">
+						<h1>Kaderníctvo <strong>Monika salón</strong> Zvolen</h1>
+						<a href="#mapInContacts"><i id="map" class="bi bi-geo-alt" style="font-size: 90px; color: #88217f;"></i></a>
+						<p>Robíme všetky strihy, všetky dĺžky vlasov, všetky farby vlasov</p>
+						<br>
+						<a href="#" onclick="toggle()"><button id="buttonEmail" type="button" class="btn btn-primary btn-lg">Objednaj sa emailom</button></a>
+							
+						<br>
+						<br>
+						<br>
+						<a><button id="buttonPhone" type="button" class="btn btn-primary btn-lg">Objednaj sa telefonicky</button></a>
+						<div id="addElementPhone">
+						  <i class="bi bi-telephone"></i> 0900 999 222
+						</div>
+					</div>
+				</div>
+		    </div>
+			<div class="carousel-item" id="carouselItem2">
+				<div class="row">
+					<div class="col-md-7 carouselText" id="carouselText2">
+						<h3><i class="bi bi-check-circle-fill" style="color: #88217f;"></i> najlepšie kaderníctvo v meste</h3>
+						<h3><i class="bi bi-check-circle-fill" style="color: #88217f;"></i> stovky spokojných zákaníčok</h3>
+						<h3><i class="bi bi-check-circle-fill" style="color: #88217f;"></i> možnosť objednať sa na termín ktorý ti vyhovuje</h3>
+					</div>
+					<div class="col-md-5 carouselImgs">
+					<img align="right" src="img/slider2.png" class="d-block animate__animated animate__backInUp" alt="...">
+					</div>
+				</div>
+			</div>
+		  </div>
+		  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Previous</span>
+		  </button>
+		  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Next</span>
+		  </button>
+		</div>
+	</div>
+	
+	<div id="aboutUs">
+		<div class="container">
+		<div id="sectionName">O nás</div>
+			<div class="row">
+				<div class="col-md-8" id="aboutUsText">
+					<p>
+						Kaderníctvo Monika vzniklo v r. 2020 keď som sa rozhodla ukončiť moju prácu v inej spoločnosti ako 
+						zamestnanec. Vždy ma to ťahalo k vlasom, účesom a krásnym ženským korunám krásy. Po absolovaní 
+						kurzu som začala nadobúdať prax vo viacerých skvelích salónoch vo Zvolene a v Banskej Bystrici.
+						Postupom času som zistila, že zákazníčky si čoraz viac žiadali konrétne mňa aby som sa ja postarala
+						o ich vlasy a to ma motivovalo k tomu aby som sa vydala vlastou cestou.
+						<br>
+						Sálón je súčasťou rodinného domu v ktorom bývam, takže to je veľká výhoda pre mňa ale aj pre 
+						zákazníčky, pretože to šetrí čas a presun.
+						<br>
+						Za ten relatívne krátky čas mám za sebou veľa skúseností so všetkými typmi vlasov a s úpravou
+						vlasov na všetky možné príležitosti. 
+						<br>
+						Stačí sa len objednať na konkrétny dátum a čas, buď telefonicky alebo emailom cez formulár vyššie. Pri 
+						objednávke cez formulár Vám pošlem odpoveď do 24 hod. či termín ktorý navrhujete platí, ak termín
+						bude obsadený, navrhnem Vám nový emailom alebo telefonicky.
+					</p>
+				</div>
+				<div class="col-md-4" id="aboutUsImg">
+					<img src="img/monika.jpg">
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="priceList">
+		<div class="container">
+		<div id="sectionName">Cenník</div>
+			<div class="row text-center" id="priceLists">
+				<div class="col-md-3 priceListItem">
+					<div class="priceListItemTop">
+						<h4>Strih dlhé vlasy</h4>
+					</div>
+					<div class="priceListItemBottom">
+						<ul style="text-align: left">
+						  <li>strih podľa požiadavky</li>
+						  <li>umytie vlasov</li>
+						  <li>vlasová kozmentika</li>
+						  <li>procedúry</li>
+						</ul>
+					</div>
+					<div class="priceListItemCirclePrice">
+						<p>30 EUR</p>
+					</div>
+				</div>
+				<div class="col-md-3 priceListItem">
+					<div class="priceListItemTop">
+						<h4>Strih krátke vlasy</h4>
+					</div>
+					<div class="priceListItemBottom">
+						<ul style="text-align: left">
+						  <li>strih podľa požiadavky</li>
+						  <li>umytie vlasov</li>
+						  <li>vlasová kozmetika</li>
+						  <li>procedúry</li>
+						  <li>farbenie vlasov</li>
+						</ul>
+					</div>
+					<div class="priceListItemCirclePrice">
+						<p>40 EUR</p>
+					</div>
+				</div>
+				<div class="col-md-3 priceListItem">
+					<div class="priceListItemTop">
+						<h4>Spoločenské príležitostné účesy</h4>
+					</div>
+					<div class="priceListItemBottom">
+						<ul style="text-align: left">
+						  <li>strih podľa požiadavky</li>
+						  <li>umytie vlasov</li>
+						  <li>vlasová kozmentika</li>
+						  <li>doplnky do vlasov</li>
+						</ul>
+					</div>
+					<div class="priceListItemCirclePrice">
+						<p>50 EUR</p>
+					</div>
+				</div>
+				<div class="col-md-3 priceListItem">
+					<div class="priceListItemTop">
+						<h4>Individuálne požiadavky</h4>
+					</div>
+					<div class="priceListItemBottom">
+						<ul style="text-align: left">
+						  <li>strih podľa požiadavky</li>
+						  <li>umytie vlasov</li>
+						  <li>vlasová kozmentika</li>
+						  <li>procedúry</li>
+						  <li>farbenie vlasov</li>
+						  <li>doplnky do vlasov</li>
+						  <li>iné požiadavky</li>
+						</ul>
+					</div>
+					<div class="priceListItemCirclePrice">
+						<p>70 EUR</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="gallery">
+		<div class="container">
+		<div id="sectionName">Galéria</div>
+			<div id="galleryItems" class="text-center">
+			  <div class="galleryItem">
+				<img src="img/gallery/gallery1.jpg" class="img-thumbnail">
+				<div class="galleryItemDesctiption"><h2>Strih krátke vlasy</h2><br><strong>Robíme krátke strihy všetkéh druhu</strong><br><br><br><br><br><p>&nbsp; &nbsp; Vykonáme úpravu vlasov podľa Vašich požiadavie, či už podstrihnutie alebo trvalá a iné. Umývanie vlasov je samozrejmosť.</p></div>
+			  </div>
+			  <div class="galleryItem">
+				<img src="img/gallery/gallery2.jpg" class="img-thumbnail">
+				<div class="galleryItemDesctiption"><h2>Strih dlhé vlasy</h2><br><strong>Možnosť vybrať si akýkoľvek účes</strong><br><br><br><br><br><p>Strihanie a úprava dlhých vlasov je naša špecialita Máme pre Vás pripravené rôzne návrhy podľa fotiek našich klientov alebo Vám upravíme vlasy podľa toho ako si to želáte.</p></div>
+			  </div>
+			  <div class="galleryItem">
+				<img src="img/gallery/gallery3.jpg" class="img-thumbnail">
+				<div class="galleryItemDesctiption"><h2>Individuálne požiadavky</h2><br><strong>Nemáme žiadne obmedzenia</strong><br><br><br><br><br><p>Zákazníčky ku nám chodia naozaj z rôznymi požiadavkami. Nie je žiaden strih alebo účes ktorý by sme nerealizovali.</p></div>
+			  </div>
+			  <div class="galleryItem">
+				<img src="img/gallery/gallery4.jpg" class="img-thumbnail">
+				<div class="galleryItemDesctiption"><h2>Spoločenský účes</h2><br><strong>Možnosť vybrať si akýkoľvek účes</strong><br><br><br><br><br><p>Stačí si vybrať ten správny účes, či už prísť z obrázkom alebo konkrétnou predstavou. Ak si chcete nechať poradiť máme pre Vás pripravené návrhy.</p></div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="contact">
+		<div class="container">
+		<div id="sectionName">Kontakty</div>
+			<div class="row">
+				<div id="contacts" class="col-md-6">
+					<br>
+					<h3><i class="bi bi-telephone-fill" style="font-size: 2rem; color: #88217f;"></i>  +421010999333</h3>
+					<br>
+					<h3><i class="bi bi-house-fill" style="font-size: 2rem; color: #88217f;"></i>  Námestie SNP XX, Zvolen</h3>
+					<br>
+					<h3><i class="bi bi-envelope-at-fill" style="font-size: 2rem; color: #88217f;"></i>  monika.harmonika@salon.sk</h3>
+					<br>
+					<a href="#"><i class="bi bi-facebook" style="font-size: 5rem; color: #88217f;"></i></a>
+					<a href="#"><i class="bi bi-messenger" style="font-size: 5rem; color: #88217f;"></i></a>
+					<a href="#"><i class="bi bi-whatsapp" style="font-size: 5rem; color: #88217f;"></i></a>
+					<br>
+					<h3><i class="bi bi-door-open-fill" style="font-size: 2rem; color: #88217f;"></i>  PONDELOK - PIATOK 7:00 - 16:00</h3>
+				</div>
+				<div id="mapInContacts" class="col-md-6">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2639.7789930616805!2d19.12503281580816!3d48.57578157926075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471538277f660c55%3A0x20f5254f2c880508!2sN%C3%A1mestie%20SNP%2020%2C%20960%2001%20Zvolen!5e0!3m2!1ssk!2ssk!4v1676577606399!5m2!1ssk!2ssk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>	
+			</div>
+			<div class="row" id="imageSlider">
+				<h3 style="text-align: center">Priestory salónu</h3> 
+				<div id="imageSliderControls">
+					<div id="imageSliderControlsLeftArrow" onclick="showHideImageSliderItem(-1);">&lt;</div>
+					<div id="imageSliderControlsRightArrow" onclick="showHideImageSliderItem(1);">&gt;</div>
+				</div>
+				<div class="clearFix"></div>
+				<div id="imageSliderImages" class="text-center">
+					<img src="img/interier/interier1.jpg" class="imageSliderItem">
+					<img src="img/interier/interier2.jpg" class="imageSliderItem">
+					<img src="img/interier/interier3.jpg" class="imageSliderItem">
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<footer>
+		Web vyhotovil Jakub Neuburger
+	</footer>
+	
+	<div id="toTheTopButton" onclick="scrollToTop()">
+		<a><i class="bi bi-chevron-up" style="color:white"></i></a>
+	</div>
+	
+	</div>
+	
+	 <div id="orderFormular">
+		<div class="mb-3">
+			 <label for="exampleFormControlInput1" class="form-label">Emailová addresa</label>
+			 <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+		</div>
+		<div class="mb-3">
+			<label for="exampleFormControlTextarea1" class="form-label">Meno a Priezvisko</label>
+			<textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+		</div>
+		<div class="mb-3">
+			<label for="exampleFormControlTextarea1" class="form-label">Nezáväzná objednávka</label>
+			<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="napíš dátum a čas kedy by si chcela urobiť svoje vlasy krásne"></textarea>
+		</div>
+		<a href="#" onclick="toggle()"><button type="button" class="btn btn-primary btn-lg">Porvrď</button></a>
+	</div>
+
+  <!-- Poznámky 
+  farba loga: #88217f
+  
+  -->
+  <!-- bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+  <!-- custom js -->
+  <script src="js/custom/customJs.js"></script>
+  </body>
+	
+</html>
